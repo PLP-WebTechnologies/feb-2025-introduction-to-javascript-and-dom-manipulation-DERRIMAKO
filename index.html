@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Ensures the browser renders the page correctly and supports special characters -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Makes the page responsive on all device sizes -->
+
+    <title>Profile Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header section containing the page title and a welcome message -->
+    <header>
+        <h1>DERRICK ONCHONG'A MAKORI</h1>
+        <h1>My Profile Dashboard</h1>
+        <p>Welcome to Knowing more about me</p>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+
+        <!-- Section describing the user -->
+        <section id="about">
+            <h2>About Me</h2>
+            <!-- This paragraph will be changed using JavaScript -->
+            <p id="bio">I'm a web development student learning JavaScript and DOM manipulation!</p>
+        </section>
+
+        <!-- Section with interactive buttons -->
+        <section id="actions">
+            <h2>Actions</h2>
+            <!-- Button to change the bio text -->
+            <button id="changeBioBtn">Update Bio</button>
+            
+            <!-- Button to show/hide more information -->
+            <button id="toggleDetailsBtn">Toggle Details</button>
+        </section>
+
+        <!-- Section that will be toggled (shown/hidden) via JavaScript -->
+        <section id="extraDetails" style="display: none;">
+            <h2>More About Me</h2>
+            <ul>
+                <li>Enjoys coding</li>
+                <li>Learning frontend development</li>
+                <li>Likes coffee ☕</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer section with a copyright -->
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+
+    <!-- JavaScript file linked at the end of body to ensure HTML loads first -->
+    <script src="script.js"></script>
+</body>
+</html>
